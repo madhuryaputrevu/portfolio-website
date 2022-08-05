@@ -4,5 +4,6 @@ export * from "twind";
 export const config: Configuration = {
   darkMode: "class",
   mode: "silent",
+  hash: true
 };
 if (IS_BROWSER) setup(config);

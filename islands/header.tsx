@@ -3,7 +3,11 @@ import { h } from "preact";
 import { tw } from "@twind";
 import { useState } from "preact/hooks";
 
-export default function Header(props: {active:string }) {
+type HeaderProps = {
+    active: string
+}
+
+export default function Header({active}: HeaderProps) {
     const [dropdownOpen, setDropdownOpen] = useState(false)
     const items = [
         {
@@ -40,7 +44,7 @@ export default function Header(props: {active:string }) {
                        {items.map((item) => (
                             // TODO: change element color and hover color
                             <a href={item.href} class={tw`hidden md:block`}>
-                                <span class={tw`${props.active == item.href ? `text-red-500`: `text-zinc-600`} hover:text-zinc-100 transition-all`}>
+                                <span class={tw`${active == item.href ? `text-red-500`: `text-zinc-600`} hover:text-zinc-100 transition-all`}>
                                     {item.name}
                                 </span>
                             </a>

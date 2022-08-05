@@ -7,6 +7,7 @@ export default function Play() {
     return (
       <div class={tw`flex flex-col mx-auto container bg-zinc-50`}>
         <Header active={"/play"}/>
+ 
       </div>
     );
   }
