@@ -1,11 +1,11 @@
-# fresh project
+# NextJS project
 
 ### Usage
 
 Start the project:
 
 ```
-deno task start
+npm run dev
 ```
 
 This will watch the project directory and restart as necessary.
