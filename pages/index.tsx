@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
   return (
-    <div className={`bg-red-400`}>Hello, World!</div>
+    <div className={`bg-red-400`}>Hello, World! 123</div>
   )
 }
 
