@@ -6,7 +6,7 @@ const About: NextPage = () => {
         <div className={`md:w-1/2 w-full`}>
           <p >
             <span className={`uppercase font-bold`}>
-              Hi! I'm Madhurya, a 19-year-old product designer, currently based in New York City
+              Hi! I&apos;m Madhurya, a 19-year-old product designer, currently based in New York City
             </span><br/>
               I am an aspiring Product Designer pursuing my BFA  in this field at Parsons school of Design, along with a BA in Psychology from Eugene Lang College of Liberal Arts. 
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
