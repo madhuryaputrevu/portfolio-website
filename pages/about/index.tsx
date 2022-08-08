@@ -1,25 +1,31 @@
 import { NextPage } from "next";
+import Image from "next/image";
+import about_image from "../../public/about_image.jpg"
 
 const About: NextPage = () => {
     return (
-        <div className={`w-full bg-green-500 flex flex-col md:flex-row`}>
-        <div className={`md:w-1/2 w-full`}>
-          <p >
-            <span className={`uppercase font-bold`}>
-              Hi! I&apos;m Madhurya, a 19-year-old product designer, currently based in New York City
+      <div className={`w-full flex flex-col md:flex-row mx-auto bg-green-500`}>
+        <div className={`md:w-1/2 w-full md:mx-auto text-left md:text-right md:px-3`}>
+          <p>
+            <span className={`uppercase font-bold text-justify`}>
+              Hi! I&apos;m Madhurya, <br/> a 19-year-old designer, currently based in New York City
             </span><br/>
-              I am an aspiring Product Designer pursuing my BFA  in this field at Parsons school of Design, along with a BA in Psychology from Eugene Lang College of Liberal Arts. 
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              I am a sophomore, pursuing my BFA in Product Design at Parsons School of Design, along with a BA in Psychology from Eugene Lang College of Liberal Arts.
+              I love to explore diverse fields from biology to economics and everything in between, and apply what I learn to my design work.
+              At the moment, my interests lie in industrial design and user experience design. <br/>
+              I have recently been fascinated with material exploration as well.
+              More specifically, I love working alongside biomaterials and using approaches such as Biomimicry when I design.
+              I&apos;m passionate about learning behaviours, strategies and innovations from nature and applying them to my design practice.
           </p>
         </div>
-        <div className={`md:w-1/2 w-full bg-red-500`}>
-          s
+        <div className={`md:w-1/2 w-full md:mx-auto md:px-3`}>
+          <Image
+            src={about_image}
+            alt="Picture of Me"
+          />
         </div>
       </div>
-    )
+  )
 }
 
 export default About;
