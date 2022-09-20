@@ -27,7 +27,7 @@ export default function Header({active}: HeaderProps) {
     ];
 
     return (
-    <div className={`w-full flex flex-col bg-zinc-50`}>
+    <div className={`w-full flex flex-col bg-lime-50`}>
         <div className={`flex-grow flex flex-col items-center`}>
           <header className={`z-50 capitalize text-zinc-600 text-xl font-normal antialiased w-full flex flex-row justify-between px-4 py-4`}>
               <div className={``}>
@@ -43,7 +43,7 @@ export default function Header({active}: HeaderProps) {
                         <div key={item.href} className={`hidden md:block`}>
                             <Link href={item.href}>
                                 <a>
-                                    <span className={`${active == item.href ? `text-red-500`: `text-zinc-600`} hover:text-red-500 transition-all`}>
+                                    <span className={`${active == item.href ? `text-amber-500`: `text-black`} hover:text-amber-500 transition-all`}>
                                         {item.name}
                                     </span>
                                 </a>

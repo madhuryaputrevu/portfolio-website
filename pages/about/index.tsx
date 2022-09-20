@@ -4,8 +4,8 @@ import about_image from "../../public/about_image.jpg"
 
 const About: NextPage = () => {
     return (
-      <div className={`w-full flex flex-col md:flex-row mx-auto bg-green-500`}>
-        <div className={`md:w-1/2 w-full md:mx-auto text-left md:text-right md:px-3`}>
+      <div className={`w-full flex flex-col md:flex-row mx-auto bg-lime-50`}>
+        <div className={`md:w-3/4 w-full md:mx-auto text-left md:text-right md:self-center align-top px-3 pt-3 pb-3`}>
           <p>
             <span className={`uppercase font-bold text-justify`}>
               Hi! I&apos;m Madhurya, <br/> a 19-year-old designer, currently based in New York City
@@ -18,7 +18,7 @@ const About: NextPage = () => {
               I&apos;m passionate about learning behaviours, strategies and innovations from nature and applying them to my design practice.
           </p>
         </div>
-        <div className={`md:w-1/2 w-full md:mx-auto md:px-3`}>
+        <div className={`md:w-1/4 w-3/4 self-center md:mx-auto md:px-3 md:pt-3 md:pb-3`}>
           <Image
             src={about_image}
             alt="Picture of Me"

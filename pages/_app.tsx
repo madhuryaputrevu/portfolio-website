@@ -4,7 +4,7 @@ import Header from '../components/header'
 
 function MyApp({ Component, pageProps, ...appProps }: AppProps) {
   return (
-    <div className={`w-full min-h-screen bg-yellow-500`}>
+    <div className={`w-full min-h-screen bg-lime-500`}>
         <div className={`flex flex-col w-full md:px-24 lg:px-48`}>
             <div className={``}>
                 <Header active={appProps.router.pathname}/>
