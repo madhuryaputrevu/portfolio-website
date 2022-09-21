@@ -4,7 +4,7 @@ import about_image from "../../public/about_image.jpg"
 
 const About: NextPage = () => {
     return (
-      <div className={`w-full flex flex-col md:flex-row mx-auto bg-lime-50`}>
+      <div className={`w-full flex flex-col md:flex-row mx-auto bg-cyan-50`}>
         <div className={`md:w-3/4 w-full md:mx-auto text-left md:text-right md:self-center align-top px-3 pt-3 pb-3`}>
           <p>
             <span className={`uppercase font-bold text-justify`}>
