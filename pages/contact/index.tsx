@@ -2,7 +2,7 @@ import { NextPage } from "next";
 
 const Contact: NextPage = () => {
         return (
-            <div className={'w-full min-h-screen text-center bg-cyan-500'}>
+            <div className={'w-full min-h-screen flex flex-col items-center justify-center'}>
                 <address>
                     email: <a href="mailto:madhuryaputrevu28@gmail.com">madhuryaputrevu28@gmail.com</a>
                 </address>
