@@ -11,7 +11,7 @@ const About: NextPage = () => {
             alt="Picture of Me"
           />
         </div>
-        <div className={`grow md:w-3/8 w-full h-full md:mx-auto text-left px-3 pt-3 pb-3 space-y-3`}>
+        <div className={`grow md:w-3/8 w-full h-full md:mx-auto text-left px-3 pt-12 pb-3 space-y-3`}>
           <p>
             <span className={`uppercase font-bold text-justify`}>
               Hi! I&apos;m Madhurya, <br/> a 19-year-old designer, currently based in New York City
