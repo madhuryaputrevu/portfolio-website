@@ -22,7 +22,7 @@ const About: NextPage = () => {
           </p>
           <p>
             I love to explore diverse fields from biology to economics and everything in between, and apply what I learn to my design work.
-            At the moment, my interests lie in industrial design and user experience design.
+            At the moment, my interests lie within industrial design.
           </p>
           <p>
             I have recently been fascinated with material exploration as well.

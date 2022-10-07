@@ -27,7 +27,7 @@ export default function Header({active}: HeaderProps) {
     ];
 
     return (
-    <div className={`w-full flex flex-col bg-cyan-50`}>
+    <div className={`w-full flex flex-col bg-white0`}>
         <div className={`flex-grow flex flex-col items-center`}>
           <header className={`z-50 capitalize text-zinc-600 text-xl font-normal antialiased w-full flex flex-row justify-between px-4 py-4`}>
               <div className={``}>
