@@ -1,47 +1,45 @@
 import * as THREE from 'three'
-import { useRef } from 'react'
-import { Canvas, useThree, extend, useFrame } from '@react-three/fiber'
+import { useRef, useEffect, useState, Suspense, useLayoutEffect } from 'react'
+import { Canvas, useThree, extend, useFrame, useLoader } from '@react-three/fiber'
+import { OrbitControls, Stage, useGLTF } from '@react-three/drei'
 
 extend({ Box: THREE.BoxGeometry })
 
+// function Test() {
+//   return <div className='bg-red-500'></div>
+// }
+
 function SpinningCube() {
-  const mesh = useRef<THREE.Mesh>(null)
+  const { scene, nodes, materials } = useGLTF('/project_room.gltf');
 
-  var increase = true;
+  // var abc: String; // This is defining.
+  // abc = "Hello, World!"; // This is assigning.
 
-  useFrame(() => {
-      if (mesh.current) {
-        mesh.current.rotation.x += 0.01
-        mesh.current.rotation.y += 0.01
+  useLayoutEffect(() => {
+    Object.assign(materials.Material, {
+      roughness: 0,
+      metalness: 0.25,
+      emissive: new THREE.Color(0x000000),
+      color: new THREE.Color(0xffa500),
+      envMapIntensity: 0.5 })
+  }, [scene, nodes, materials]);
 
-        if (increase) {
-          mesh.current.scale.x += 0.01
-          if (mesh.current.scale.x >= 1) {
-            increase = false;
-          }
-        } else {
-          mesh.current.scale.x -= 0.01
-          if (mesh.current.scale.x <= 0.2) {
-            increase = true;
-          }
-        }
-      }
-  })
   return (
-    <mesh ref={mesh}>
-      <boxGeometry attach="geometry" args={[3, 3, 3]} />
-      <meshStandardMaterial attach="material" color="rgb(216,180,254)" />
-    </mesh>
+    <primitive object={scene} />
   )
 }
 
 function App() {
   return (
     <div className={`w-full h-screen`}>
-      <Canvas flat linear>
-        <ambientLight />
-        <pointLight position={[10, 10, 10]} />
-        <SpinningCube />
+      <Canvas dpr={[1, 2]} camera={{ fov: 45 }}>
+        <color attach="background" args={['white']} />
+        <Suspense fallback={null}>
+          <Stage intensity={1}>
+            <SpinningCube/>
+          </Stage>
+        </Suspense>
+        <OrbitControls autoRotate enableZoom={true} enablePan={false} minPolarAngle={Math.PI / 2.8} maxPolarAngle={Math.PI / 2.8} />
       </Canvas>
     </div>
   )

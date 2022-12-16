@@ -1,0 +1,210 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v3.2.40",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Walls",
+            "scale" : [
+                1.5240000486373901,
+                1.3716000318527222,
+                1.5240000486373901
+            ],
+            "translation" : [
+                1.9688286781311035,
+                1.7738900184631348,
+                0
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "Floor",
+            "scale" : [
+                1.5240000486373901,
+                1.3716000318527222,
+                1.5240000486373901
+            ],
+            "translation" : [
+                1.9688286781311035,
+                1.7738900184631348,
+                0
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Material",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.800000011920929,
+                    0.800000011920929,
+                    0.800000011920929,
+                    1
+                ],
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.4000000059604645
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cube",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Cube.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 16,
+            "max" : [
+                1,
+                1,
+                1.2999999523162842
+            ],
+            "min" : [
+                -1.2999999523162842,
+                -1.3022880554199219,
+                -1
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 16,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 16,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 60,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 8,
+            "max" : [
+                1,
+                -1,
+                1
+            ],
+            "min" : [
+                -1,
+                -1.2999999523162842,
+                -1
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 8,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 8,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 36,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 192,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 192,
+            "byteOffset" : 192
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 128,
+            "byteOffset" : 384
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 120,
+            "byteOffset" : 512
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 96,
+            "byteOffset" : 632
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 96,
+            "byteOffset" : 728
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 64,
+            "byteOffset" : 824
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 72,
+            "byteOffset" : 888
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 960,
+            "uri" : "data:application/octet-stream;base64,AACAPwAAgD9mZqY/AACAP2Cxpr9mZqY/ZmamvwAAgD8AAIC/Zmamv2Cxpr8AAIC/ZmamvwAAgD9mZqY/ZmamvwAAgD9mZqY/Zmamv2Cxpr9mZqY/Zmamv2Cxpr9mZqY/AACAPwAAgD8AAIA/AACAP2Cxpr8AAIA/AACAvwAAgD8AAIC/AACAv2Cxpr8AAIC/AACAvwAAgD8AAIA/AACAvwAAgD8AAIA/AACAv2Cxpr8AAIA/AACAv2Cxpr8AAIA/O80TPzvNEz87zRM/O80TPzvNE787zRM/O80TvzvNEz87zRO/O80TvzvNE787zRO/O80TvzvNEz87zRM/O80TvzvNEz87zRM/O80TvzvNE787zRM/O80TvzvNE787zRM/O80TPzvNEz87zRO/O80TPzvNE787zRO/O80TPzvNEz87zRO/O80TPzvNE787zRO/sl+aPouPZz+yX5q+sl+aPouPZz+yX5q+sl+aPouPZ7+yX5q+sl+aPouPZ7+yX5q+AAAgPwAAgD4AAMA+AACAPgAAID8AAEA/AADAPgAAQD8AACA/AAAAAAAAID8AAIA/AADAPgAAAAAAAMA+AACAPwAAID8AAIA+AADAPgAAgD4AACA/AABAPwAAwD4AAEA/AAAgPwAAAAAAACA/AACAPwAAwD4AAAAAAADAPgAAgD8BAAAABAABAAQABgAHAAUAAgAHAAIAAwAJAA4ADAAJAAwACAAPAAsACgAPAAoADQAHAAMACwAHAAsADwAAAAEACQAAAAkACAADAAIACgADAAoACwAEAAAACAAEAAgADAABAAYADgABAA4ACQACAAUADQACAA0ACgAAAIA/ZmamvwAAgL8AAIA/ZmamvwAAgD8AAIC/ZmamvwAAgL8AAIC/ZmamvwAAgD8AAIA/AACAvwAAgL8AAIA/AACAvwAAgD8AAIC/AACAvwAAgL8AAIC/AACAvwAAgD87zRM/O80TvzvNE787zRM/O80TvzvNEz87zRO/O80TvzvNE787zRO/O80TvzvNEz87zRM/O80TPzvNE787zRM/O80TPzvNEz87zRO/O80TPzvNE787zRO/O80TPzvNEz8AAMA+AAAAPwAAwD4AAIA+AAAAPgAAAD8AAAA+AACAPgAAwD4AAAA/AADAPgAAgD4AAAA+AAAAPwAAAD4AAIA+AgAAAAEAAgABAAMABgAHAAUABgAFAAQAAgADAAcAAgAHAAYAAAACAAYAAAAGAAQAAwABAAUAAwAFAAcAAQAAAAQAAQAEAAUA"
+        }
+    ]
+}
